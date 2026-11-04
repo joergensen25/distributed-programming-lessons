@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <text x="50" y="18" font-family="Arial" font-size="18" font-weight="700" text-anchor="middle">CSS</text>
+  <path d="M12 25h76l-7 78-31 10-31-10z" fill="#1572b6"/>
+  <path d="M50 31h31l-6 66-25 8z" fill="#33a9dc"/>
+  <path d="M27 45h47l-2 10H40l1 9h30l-4 26-17 5-17-5-1-14h10l1 7 7 2 7-2 1-9H31z" fill="white"/>
+</svg>

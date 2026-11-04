@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Stopur</title>
+<body>
+
+
+<h1>Mit ur</h1>
+
+<h2 id="ur">0</h2>
+
+
+<button onClick="startUr()">Start</button>
+<button onclick="stopUr()">Stop</button>
+
+
+<script>
+
+let sekunder = 0
+let timerId = null;
+
+function startUr() {
+
+    if (timerId === null) {
+        timerId = setInterval(function() {
+            sekunder++
+            document.getElementById("ur").innerHTML = sekunder
+        }, 1000)
+    }
+}
+
+
+function stopUr() {
+
+    clearInterval(timerId);
+    timerId = null;
+
+}
+
+</script>
+
+
+</body>
+
+</head>
+</html>

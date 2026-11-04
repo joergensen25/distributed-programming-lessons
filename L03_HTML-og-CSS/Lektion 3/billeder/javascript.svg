@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <text x="50" y="18" font-family="Arial" font-size="15" font-weight="700" text-anchor="middle">JavaScript</text>
+  <path d="M12 25h76l-7 78-31 10-31-10z" fill="#e3b600"/>
+  <path d="M50 31h31l-6 66-25 8z" fill="#f7df1e"/>
+  <text x="49" y="88" font-family="Arial" font-size="45" font-weight="700" text-anchor="middle" fill="white">JS</text>
+</svg>

@@ -1,0 +1,96 @@
+body {
+  margin: 24px;
+  font-family: "Times New Roman", serif;
+}
+
+.spil-grid {
+  width: min(620px, 100%);
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  grid-template-areas:
+    "titel titel"
+    "billede forklaring"
+    "xo afslutning";
+  column-gap: 42px;
+  row-gap: 34px;
+  align-items: start;
+}
+
+h1 {
+  grid-area: titel;
+  font-size: 32px;
+  margin: 0 0 12px;
+}
+
+.braet-billede {
+  grid-area: billede;
+  width: 120px;
+  height: auto;
+  margin-top: 6px;
+}
+
+.forklaring {
+  grid-area: forklaring;
+  font-size: 18px;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.xo {
+  grid-area: xo;
+  display: grid;
+  grid-template-columns: repeat(3, 25px);
+  grid-template-rows: repeat(3, 25px);
+  width: max-content;
+}
+
+.xo span {
+  border: 2px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -2px;
+  margin-bottom: -2px;
+  font-size: 17px;
+}
+
+.afslutning {
+  grid-area: afslutning;
+  font-size: 18px;
+  line-height: 1.15;
+}
+
+.afslutning p {
+  margin: 0 0 26px;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 12px;
+  }
+
+  .spil-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "titel"
+      "billede"
+      "forklaring"
+      "xo"
+      "afslutning";
+    gap: 28px;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+
+  .braet-billede {
+    width: 110px;
+  }
+
+  .forklaring,
+  .afslutning {
+    font-size: 17px;
+  }
+}

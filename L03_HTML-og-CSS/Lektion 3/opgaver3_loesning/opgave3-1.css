@@ -1,0 +1,23 @@
+body {
+  margin: 24px;
+  font-family: "Times New Roman", serif;
+}
+
+h1 {
+  font-size: 36px;
+  font-style: italic;
+  text-decoration: underline;
+  margin-bottom: 26px;
+}
+
+.liste-boks {
+  width: 180px;
+  border: 4px solid red;
+  padding: 0 12px;
+}
+
+ol {
+  margin: 4px 0 4px 30px;
+  padding-left: 16px;
+  font-size: 20px;
+}
