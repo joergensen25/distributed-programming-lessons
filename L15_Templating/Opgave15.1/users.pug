@@ -1,0 +1,26 @@
+head 
+    title Brugeroplysninger
+
+body
+
+    h1 Brugerprofil:
+
+    h2 Oplysninger om #{brugernavn}
+    p Brugernavn:  #{brugernavn}
+    p Alder: #{alder} år
+    p By: #{by}
+    p Konto oprettet: #{kontoOprettet}
+
+
+    
+    h2 #{brugernavn}'s achievements 
+    
+    table(border = '1')
+        tr
+            th Achievements
+            each achievement in achievements
+                tr 
+                    td #{achievement}
+                
+                
+        

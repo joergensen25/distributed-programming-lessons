@@ -1,0 +1,21 @@
+head 
+    title Brugeroversigt
+
+body
+
+    h1 Brugeroversigt:
+
+    each user in users
+        h2 #{user.brugernavn}
+
+        p Alder: #{user.alder}
+        p By: #{user.by}
+        p Konto oprettet: #{user.kontoOprettet}
+    
+        h3 Achievements 
+    
+        u1 
+            each achievement in user.achievements
+                li #{achievement}
+                
+        
