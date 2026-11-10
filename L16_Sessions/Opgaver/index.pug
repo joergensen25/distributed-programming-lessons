@@ -1,0 +1,60 @@
+doctype html
+html
+    head 
+        title Fruits and Vegetables Shopping
+body 
+    h1 Fruits and Vegetables Shopping
+
+    h2 Products
+
+    table(border='1')
+        tr 
+            th Product ID 
+            th Product Name 
+            th Product Price
+            th Handling
+
+
+        each produkt in produkter
+            tr 
+                td #{produkt.id}
+                td #{produkt.navn}
+                td #{produkt.pris} kr.
+                td 
+                    button(onclick='clickfunction(' + produkt.id + ')') Add to basket
+
+    
+    h2 Shopping Basket
+    if produktId !== undefined
+        p Product-ID: #{produktId}
+    else 
+        p You haven't selected a product yet.
+
+
+
+    script.
+        async function post(url, objekt) {
+            const respons = await fetch(url, {
+                method: "POST",
+                body: JSON.stringify(objekt),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            if (respons.status !== 201) // Created
+                throw new Error(respons.status);
+
+            return await respons.text();
+        }
+
+        let clickfunction = async (id) => {
+                try {
+                    await post('/buy', { id: id })
+                    window.location.reload()
+                } catch (error) {
+                    console.error(error)
+                    alert('Der skete en fejl.')
+                }
+            }
+
+    

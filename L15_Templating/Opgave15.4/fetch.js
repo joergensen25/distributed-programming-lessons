@@ -25,10 +25,9 @@ app.get('/:nationalitet/:antal', async (req, response) => {
         return response.status(400).send("Ugyldigt antal. Vælg et antal mellem 10 og 100.")
     }
 
-    console.log(`Henter ${antal} brugere fra ${nationalitet}`)
+    
     try {
-
-        
+        console.log(`Henter ${antal} brugere fra ${nationalitet}`)
 
         let apiResponse = await fetch(`https://randomuser.me/api/?nat=${nationalitet}&results=${antal}`)
 
