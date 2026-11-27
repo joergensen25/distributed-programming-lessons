@@ -1,7 +1,7 @@
 ### Opsætning af Express og Pug
 
 1. Åbn terminalen i VS Code, og naviger til den mappe, hvor du ønsker at bruge Express og Pug.
-2. Opret et Node.js-projekt:
+2. Opret et Node.js-projekt (ikke strengt nødvendigt, men inkluderer god format i den oprettede package.json-fil):
    `npm init -y`
 3. Installer Express og Pug:
    `npm install express pug`
